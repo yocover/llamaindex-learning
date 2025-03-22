@@ -17,6 +17,7 @@ import requests
 import json
 import aiohttp
 
+from llama_index.core.multi_modal_llms import MultiModalLLM, MultiModalLLMMetadata
 
 def siliconflow_response_to_completion_response(
     response: Any,

@@ -19,7 +19,7 @@ MAX_BATCH_SIZE = 1024
 USER_AGENT = "llama-index-embeddings-siliconflow-custom"
 
 
-class CustomSiliconFlowEmbedding(BaseEmbedding):
+class SiliconflowEmbedding(BaseEmbedding):
     """
     A wrapper class for accessing embedding models available via the SiliconFlow API. This class allows for easy integration
     of SiliconFlow embeddings into your projects, supporting both synchronous and asynchronous retrieval of text embeddings.
@@ -30,7 +30,7 @@ class CustomSiliconFlowEmbedding(BaseEmbedding):
         api_key (str): SiliconFlow API key.
 
     Examples:
-        >>> model = CustomSiliconFlowEmbedding(model_name="your-model-name", api_key="your-api-key")
+        >>> model = SiliconflowEmbedding(model_name="your-model-name", api_key="your-api-key")
         >>> print(model.get_text_embedding("Hello, world!"))
         [0.1, 0.2, 0.3, ...]
     """
