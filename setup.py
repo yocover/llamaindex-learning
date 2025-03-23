@@ -5,7 +5,7 @@ setup(
     version="0.1",
     author="Yocover",
     description="LlamaIndex learning project with custom embeddings",
-    packages=find_packages(include=['src', 'src.*']),  # 明确指定包含 src 目录
+    packages=find_packages(include=["src", "src.*"]),  # 明确指定包含 src 目录
     python_requires=">=3.10",
     install_requires=[
         "llama-index",
@@ -13,5 +13,6 @@ setup(
         "requests",
         "aiohttp",
         "pydantic",
+        "etcd3",
     ],
 )
