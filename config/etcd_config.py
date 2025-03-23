@@ -4,13 +4,18 @@ from src.utils.etcd_util import ConfigManager
 from src.constants import ETCD_HOST, ETCD_PORT, ETCD_PREFIX
 
 
+ETCD_CONFIG = None
+
+
 def init_config():
+    global ETCD_CONFIG
     instance = EtcdConfig(
         host=ETCD_HOST,
         port=ETCD_PORT,
         prefix=ETCD_PREFIX,
     )
-    return instance.config
+    ETCD_CONFIG = instance.config
+    return ETCD_CONFIG
 
 
 class EtcdConfig:
