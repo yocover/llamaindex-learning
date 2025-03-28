@@ -93,7 +93,7 @@ llama-index-tools-yahoo-finance==0.3.0
 llama-index-vector-stores-chroma==0.4.1
 llama-index-vector-stores-milvus==0.5.0
 llama-parse==0.6.4.post1
--e git+ssh://git@github.com/yocover/llamaindex-learning.git@82ac8e5e68d06a2280231a54abb3cd144640d3fd#egg=llamaindex_learning
+-e git+ssh://git@github.com/yocover/llamaindex-learning.git@d7b04a6de99213a5bf7f14079b8738c9b3fa2118#egg=llamaindex_learning
 llmsherpa==0.1.4
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
